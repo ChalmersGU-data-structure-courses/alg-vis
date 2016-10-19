@@ -228,6 +228,10 @@ public class View
         g.setColor(c);
     }
 
+    public Color getColor() {
+        return g.getColor();
+    }
+
     public void startDrawing() {
         oldTransform = g.getTransform();
         g.transform(at);
