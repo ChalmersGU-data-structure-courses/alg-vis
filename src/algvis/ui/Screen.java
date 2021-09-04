@@ -56,7 +56,8 @@ public class Screen extends JPanel {
         if (I == null || d.width != size.width || d.height != size.height) {
             I = createImage(d.width, d.height);
             G = I.getGraphics();
-            V.setGraphics((Graphics2D) G, d.width, d.height);
+            ((Graphics2D)G).scale(2, 2);
+            V.setGraphics((Graphics2D) G, d.width/2, d.height/2);
             size = d;
         }
     }

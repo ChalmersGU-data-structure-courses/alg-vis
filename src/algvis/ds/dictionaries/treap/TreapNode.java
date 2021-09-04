@@ -63,7 +63,7 @@ public class TreapNode extends BSTNode {
         drawKey(v);
         drawArrow(v);
         drawArc(v);
-        final String str = String.valueOf(Math.round(100 * p) / 100.0);
+        String str = String.valueOf(Math.round(100 * p) / 100.0);
 
         Color currentViewColor = null;
         if (!Color.black.equals(v.getColor())) {
@@ -71,7 +71,7 @@ public class TreapNode extends BSTNode {
             v.setColor(Color.black);
         }
 
-        v.drawString(str, x, y - Node.RADIUS * 1.5, Fonts.EXTRA_SMALL);
+        v.drawString(str, x, y - Node.RADIUS * 1.5, Fonts.SMALL);
 
         if (currentViewColor != null) {
             v.setColor(currentViewColor);
@@ -79,7 +79,8 @@ public class TreapNode extends BSTNode {
     }
 
     void bgPColor() {
-        bgColor(new Color(255, 255 - (int) Math.round(100 * p), 0));
+        bgColor(new Color(255, 255, 255));
+        //bgColor(new Color(255, 255 - (int) Math.round(100 * p), 0));
     }
 
     @Override
