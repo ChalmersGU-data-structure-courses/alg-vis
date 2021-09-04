@@ -19,6 +19,8 @@ import algvis.ds.dictionaries.btree.a23Panel;
 import algvis.ds.dictionaries.btree.a23Tree;
 import algvis.ds.dictionaries.redblacktree.RB;
 import algvis.ds.dictionaries.redblacktree.RBPanel;
+import algvis.ds.dictionaries.redblackbst.RBBST;
+import algvis.ds.dictionaries.redblackbst.RBBSTPanel;
 import algvis.ds.dictionaries.scapegoattree.GBPanel;
 import algvis.ds.dictionaries.scapegoattree.GBTree;
 import algvis.ds.dictionaries.skiplist.SkipList;
@@ -47,6 +49,8 @@ import algvis.ds.priorityqueues.pairingheap.PairHeapPanel;
 import algvis.ds.priorityqueues.pairingheap.PairingHeap;
 import algvis.ds.priorityqueues.skewheap.SkewHeap;
 import algvis.ds.priorityqueues.skewheap.SkewHeapPanel;
+import algvis.ds.priorityqueues.meldableheap.MeldableHeap;
+import algvis.ds.priorityqueues.meldableheap.MeldableHeapPanel;
 import algvis.ds.rotations.RotPanel;
 import algvis.ds.rotations.Rotations;
 import algvis.ds.suffixtree.SuffixTree;
@@ -68,6 +72,7 @@ public enum DS {
     B_TREE(BTree.class, BPanel.class), // B-tree
     BPLUS_TREE(BPlusTree.class, BPlusPanel.class), // B+-tree
     RB_TREE(RB.class, RBPanel.class), // red-black tree
+    RBBST_TREE(RBBST.class, RBBSTPanel.class), // red-black BST
     AA_TREE(AA.class, AAPanel.class), // AA-tree
     TREAP(Treap.class, TreapPanel.class), // treap
     SKIPLIST(SkipList.class, SkipListPanel.class), // skiplist
@@ -81,6 +86,7 @@ public enum DS {
     // Meldable heaps
     LEFTIST_HEAP(LeftHeap.class, LeftHeapPanel.class), // leftist heap
     SKEW_HEAP(SkewHeap.class, SkewHeapPanel.class), // skew heap
+    MELDABLE_HEAP(MeldableHeap.class, MeldableHeapPanel.class), // skew heap
     PAIRING_HEAP(PairingHeap.class, PairHeapPanel.class), // pairing heap
     BIN_HEAP(BinomialHeap.class, BinHeapPanel.class), // binomial heap
     LAZY_BIN_HEAP(LazyBinomialHeap.class, LazyBinHeapPanel.class), // lazy binomial heap
